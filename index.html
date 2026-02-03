@@ -28,7 +28,10 @@
     <meta property="twitter:title" content="Gusto Cuts in Dayton, Ohio | Barbershop, Skin Care, Coaching, Products">
     <meta property="twitter:description" content="APPOINTMENT ONLY: Gusto Cuts is the future of barbering. We specialize in providing a sensational experience servicing kids, women, and men in the Dayton, Ohio area.">
     <meta property="twitter:image" content="Images/og-image.png">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Favicon & SEO -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -58,28 +61,6 @@
             --text-white: #ffffff;
             --button-bg: rgba(255, 255, 255, 0.08);
             --button-hover: rgba(255, 255, 255, 0.15);
-        }
-
-        body {
-            /* Reference the image file */
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/barber.jpg');
-            
-            /* Ensure the image covers the whole screen */
-            background-size: cover;
-            
-            /* Keep the image centered */
-            background-position: center;
-            
-            /* Fix the background so it doesn't scroll with the content */
-            background-attachment: fixed;
-            
-            /* Fallback color if the image fails to load */
-            background-color: #1a1a1a;
-            
-            /* Reset margins for a full-screen fit */
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
         }
 
         .wrapper {
@@ -314,12 +295,24 @@
         <p>Dayton Ohio Barber</p>
 
         <div class="btn-list">
-            <a href="https://booksy.com/en-us/12345_gusto-cuts_barber-shop_134567_new-york"class="btn">Book Now</a>
-            <a href="https://www.instagram.com/gustocuts" class="btn">Instagram</a>
-            <a href="https://www.instagram.com/gustoslemonade" class="btn">Gusto's Lemonade</a>
-            <a href="https://culturalcurrency.vip/" class="btn">Cultural Currency</a>
-            <a href="https://open.spotify.com/playlist/58SeJSxjo0Fr0PFCVsskxu" class="btn">Spotify Playlists</a>
-            <a href="mailto:gustocuts@gmail.com" class="btn">Email Gusto</a>
+            <a href="https://booksy.com/en-us/12345_gusto-cuts_barber-shop_134567_new-york"class="link-button" target="_blank">
+                <i class="fa-solid fa-calendar-check"></i> Book Now
+            </a>
+            <a href="https://www.instagram.com/gustocuts" class="link-button" target="_blank">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.instagram.com/gustoslemonade" class="link-button" target="_blank"
+                <i class="fa-brands fa-instagram"></i> Gusto's Lemonade
+            </a>
+            <a href="https://culturalcurrency.vip/" class="btn">
+                <i class="fa-solid fa-link"></i> Cultural Currency
+            </a>
+            <a href="https://open.spotify.com/playlist/58SeJSxjo0Fr0PFCVsskxu" class="btn">
+                <i class="fa-brands fa-spotify"></i> The Wine Down Playlist
+            </a>
+            <a href="mailto:gustocuts@gmail.com" class="link-button">
+                <i class="fa-solid fa-envelope"></i> Email Me
+            </a>
         </div>
 
         <div class="socials">
