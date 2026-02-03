@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Currency Presents - Deep Cuts & B-Sides</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a0015 0%, #1a0520 25%, #2d0a3d 50%, #1a0520 75%, #0a0015 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        @keyframes neonPulse {
+            0%, 100% { 
+                text-shadow: 0 0 10px #ff006e, 0 0 20px #ff006e, 0 0 30px #ff006e, 0 0 40px #8338ec;
+            }
+            50% { 
+                text-shadow: 0 0 20px #ff006e, 0 0 30px #ff006e, 0 0 40px #ff006e, 0 0 50px #8338ec, 0 0 60px #8338ec;
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .neon-text {
+            font-family: 'Orbitron', sans-serif;
+            color: #fff;
+            animation: neonPulse 3s ease-in-out infinite;
+        }
+        
+        .neon-border {
+            border: 2px solid #ff006e;
+            box-shadow: 0 0 10px #ff006e, 0 0 20px #ff006e, inset 0 0 10px rgba(255, 0, 110, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .neon-border:hover {
+            border-color: #8338ec;
+            box-shadow: 0 0 15px #8338ec, 0 0 30px #8338ec, inset 0 0 15px rgba(131, 56, 236, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .glow-box {
+            background: linear-gradient(135deg, rgba(255, 0, 110, 0.1) 0%, rgba(131, 56, 236, 0.1) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 0, 110, 0.3);
+        }
+        
+        .step-number {
+            background: linear-gradient(135deg, #ff006e 0%, #8338ec 100%);
+            box-shadow: 0 0 20px rgba(255, 0, 110, 0.5);
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .vinyl-record {
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle, #1a1a1a 30%, #ff006e 30%, #ff006e 35%, #1a1a1a 35%, #1a1a1a 45%, #8338ec 45%, #8338ec 50%, #1a1a1a 50%);
+            border-radius: 50%;
+            animation: spin 4s linear infinite;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen">
+    <!-- Header -->
+    <header class="relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple-600 rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-600 rounded-full filter blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 py-12 relative z-10">
+            <div class="text-center">
+                <div class="inline-block floating mb-6">
+                    <div class="vinyl-record"></div>
+                </div>
+                <h1 class="neon-text text-6xl md:text-7xl font-black mb-4 uppercase tracking-wider">
+                    Cultural Currency
+                </h1>
+                <p class="text-2xl md:text-3xl text-pink-400 font-light mb-2">Presents</p>
+                <div class="w-32 h-1 bg-gradient-to-r from-pink-600 via-purple-600 to-pink-600 mx-auto mb-8"></div>
+                <p class="text-xl md:text-2xl text-purple-300 max-w-3xl mx-auto leading-relaxed">
+                    Custom Playlist Party Experiences for <span class="text-pink-400 font-semibold">Deep Cuts</span> & <span class="text-purple-400 font-semibold">B-Side</span> Music Lovers
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="container mx-auto px-6 py-16">
+        <div class="max-w-5xl mx-auto">
+            <div class="glow-box rounded-2xl p-8 md:p-12 mb-12">
+                <p class="text-lg md:text-xl text-gray-200 leading-relaxed mb-6">
+                    We create <span class="text-pink-400 font-semibold">unforgettable playlist parties</span> built around theme-based music sets, blending curated playlists and live DJs with immersive artistic elements like <span class="text-purple-400">color therapy</span>, <span class="text-pink-400">light shows</span>, <span class="text-purple-400">spoken word</span>, <span class="text-pink-400">dancers</span>, and more.
+                </p>
+                <p class="text-lg md:text-xl text-gray-200 leading-relaxed">
+                    Our events are designed for people who love deep cuts, hidden gems, and B-sides that deserve to shine. We bring music and community together in meaningful ways through food, drinks, and custom experiences.
+                </p>
+            </div>
+
+            <!-- How It Works -->
+            <h2 class="neon-text text-4xl md:text-5xl font-bold text-center mb-12 uppercase">
+                How It Works
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Step 1 -->
+                <div class="neon-border rounded-xl p-8 hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-start mb-4">
+                        <div class="step-number rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4 flex-shrink-0">
+                            1
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-pink-400 mb-3">RSVP</h3>
+                            <p class="text-gray-300 text-lg">
+                                Guests recommend songs when they RSVP.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="neon-border rounded-xl p-8 hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-start mb-4">
+                        <div class="step-number rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4 flex-shrink-0">
+                            2
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-purple-400 mb-3">Curate</h3>
+                            <p class="text-gray-300 text-lg">
+                                We build a custom experience from those recommendations and our own curation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="neon-border rounded-xl p-8 hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-start mb-4">
+                        <div class="step-number rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4 flex-shrink-0">
+                            3
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-pink-400 mb-3">Connect</h3>
+                            <p class="text-gray-300 text-lg">
+                                We host at unique small businesses—wine bars, sandwich shops, sneaker stores—and more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="neon-border rounded-xl p-8 hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-start mb-4">
+                        <div class="step-number rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4 flex-shrink-0">
+                            4
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-purple-400 mb-3">Travel</h3>
+                            <p class="text-gray-300 text-lg">
+                                We bring the vibe to wherever you are—locally and on the road.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto px-6 py-16 mb-16">
+        <div class="max-w-3xl mx-auto">
+            <div class="glow-box rounded-2xl p-8 md:p-12 text-center">
+                <h2 class="neon-text text-4xl md:text-5xl font-bold mb-8 uppercase">
+                    Get In Touch
+                </h2>
+                
+                <div class="space-y-6">
+                    <a href="mailto:culturalcurrencypresents@gmail.com" 
+                       class="neon-border rounded-lg px-8 py-4 inline-block text-xl hover:bg-pink-600/20 transition-all duration-300">
+                        <span class="text-pink-400 font-semibold">Email:</span>
+                        <span class="ml-2 text-white">culturalcurrencypresents@gmail.com</span>
+                    </a>
+                    
+                    <div class="block">
+                        <a href="tel:5133347953" 
+                           class="neon-border rounded-lg px-8 py-4 inline-block text-xl hover:bg-purple-600/20 transition-all duration-300">
+                            <span class="text-purple-400 font-semibold">Phone:</span>
+                            <span class="ml-2 text-white">(513) 334-7953</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-pink-900/30 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">
+                © 2024 Cultural Currency Presents. All rights reserved.
+            </p>
+            <p class="text-purple-400 mt-2 text-sm">
+                Deep Cuts & B-Sides for Music Lovers
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

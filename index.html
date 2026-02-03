@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Currency | Links</title>
+    <meta name="title" content="Cultural Currency | B-Sides & Deep Cuts">
+    <meta name="description" content="A curated collective focused on the tracks that get left behind. Join us for playlists, deep cuts, and underground DJ sets.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://culturalcurrency.vip">
+    <meta property="og:title" content="Cultural Currency | B-Sides & Deep Cuts">
+    <meta property="og:description" content="Curating the underground. Join the guestlist for upcoming parties and exclusive playlists.">
+    <meta property="og:image" content="Images/og-image.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://culturalcurrency.vip">
+    <meta property="twitter:title" content="Cultural Currency | B-Sides & Deep Cuts">
+    <meta property="twitter:description" content="Curating the underground. Join the guestlist for upcoming parties and exclusive playlists.">
+    <meta property="twitter:image" content="Images/og-image.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Umami Analytics -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="3498d6fe-8710-4723-8109-a59626c9977c"></script>
+    
+    <!-- Favicon & SEO -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon.jpeg">
+
+    <meta name="keywords" content="B-sides, Deep Cuts, DJ Collective, Vinyl Culture, Curated Playlists">
+    <meta name="robots" content="index, follow">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Cultural Currency",
+      "url": "https://culturalcurrency.vip",
+      "logo": "https://culturalcurrency.vip/favicon.jpeg",
+      "sameAs": [
+        "https://www.instagram.com/culturalcurrencypresents",
+        "https://open.spotify.com/user/1264699547"
+      ]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --bg-black: #050505;
+            --accent-gold: #d4af37; /* Optional accent color for 'premium' feel */
+            --text-white: #ffffff;
+            --button-bg: rgba(255, 255, 255, 0.08);
+            --button-hover: rgba(255, 255, 255, 0.15);
+        }
+
+        body {
+            background-color: var(--bg-black);
+            color: var(--text-white);
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 450px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 2px solid var(--text-white);
+            margin-bottom: 15px;
+        }
+
+        h1 { font-size: 1.5rem; letter-spacing: 2px; text-transform: uppercase; }
+        p { font-size: 0.9rem; opacity: 0.8; margin-bottom: 30px; }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Keeps it behind everything */
+            overflow: hidden;
+        }
+        
+        .video-background video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+        
+        /* The Overlay: Adjust opacity (0.6) to make text pop */
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); 
+        }
+
+        /* Link Buttons */
+        .btn-list { display: flex; flex-direction: column; gap: 16px; }
+        .btn {
+            background: var(--button-bg);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: var(--text-white);
+            padding: 18px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: var(--button-hover);
+            border-color: var(--text-white);
+            transform: translateY(-2px);
+        }
+
+        /* Signup Form */
+        .signup-section { margin-top: 50px; padding: 20px; border-top: 1px solid #222; }
+        .signup-form { display: flex; margin-top: 15px; }
+        .signup-form input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #333;
+            background: #111;
+            color: white;
+            border-radius: 4px 0 0 4px;
+        }
+        .signup-form button {
+            padding: 12px 20px;
+            border: none;
+            background: var(--text-white);
+            color: black;
+            font-weight: bold;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        /* Social Icons */
+        .socials { margin-top: 40px; font-size: 1.5rem; }
+        .socials a { color: var(--text-white); margin: 0 15px; transition: opacity 0.3s; }
+        .socials a:hover { opacity: 0.6; }
+
+        /* The Spinning Animation */
+        @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+        }
+
+        /* Updated Logo Styling */
+        .logo {
+            width: 120px; /* Slightly larger for detail */
+            height: 120px;
+            border-radius: 50%;
+            
+            /* Creating the 'Vinyl' look */
+            border: 4px solid #1a1a1a;
+            box-shadow: 0 0 0 2px #333, inset 0 0 10px rgba(0,0,0,0.5);
+            
+            margin-bottom: 20px;
+            object-fit: cover;
+            
+            /* Apply the animation: 8 seconds per rotation, linear, infinite */
+            animation: spin 8s linear infinite;
+        }
+        
+        /* DJ Interaction: Pause the record on hover */
+        .logo:hover {
+            animation-play-state: paused;
+            cursor: crosshair;
+            filter: brightness(1.2);
+        }
+        
+        /* Initial "Needle Drop" Fade In */
+        .wrapper {
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        body::before {
+        content: "";
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: url('https://www.transparenttextures.com/patterns/stardust.png');
+        opacity: 0.05;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+        .share-container {
+            margin-top: 20px;
+    }
+        .share-btn {
+            background: none;
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 8px 16px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .share-btn:hover {
+            border-color: white;
+        }
+        #copy-status {
+            display: none;
+            font-size: 0.7rem;
+            color: #00ff00; /* Subtle green for success */
+            margin-left: 10px;
+        }
+
+        /* Spinner Container */
+        .loader-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 0;
+        }
+        
+        /* The Spinner itself */
+        .spinner {
+            width: 30px;
+            height: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-top: 2px solid var(--text-white);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 10px;
+        }
+        
+        .loader-text {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+    <video autoplay muted loop playsinline poster="fallback-image.jpg">
+        <source src="Videos/background_alt.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+    </div>
+    
+    <div class="wrapper">
+        <img src="Images/ccp-logo-transparent.png" alt="Cultural Currency" class="logo">
+        <h1>Cultural Currency</h1>
+        <p>B-Sides & Deep Cuts Collective</p>
+
+        <div class="btn-list">
+            <div id="loader" class="loader-container">
+                <div class="spinner"></div>
+                <div class="loader-text">Fetching Links...</div>
+        </div>
+</div>
+
+        <div class="signup-section">
+            <h3>Join the Guestlist</h3>
+            <form action="https://formspree.io/f/meegrpyl" method="POST" class="signup-form">
+                <input type="hidden" name="_next" value="https://culturalcurrency.vip/thanks.html">
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="email" name="email" placeholder="email@example.com" required>
+                <button type="submit">JOIN</button>
+            </form>
+        </div>
+
+        <div class="socials">
+            <a href="https://open.spotify.com/user/1264699547"><i class="fab fa-spotify"></i></a>
+            <a href="https://www.instagram.com/culturalcurrencypresents/"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <div class="share-container">
+            <button id="share-btn" class="share-btn">
+                <i class="fas fa-share-nodes"></i> Share this page
+            </button>
+            <span id="copy-status">Copied!</span>
+        </div>
+    </div>
+
+        <script>
+        // Share Functionality
+        document.getElementById('share-btn').addEventListener('click', async () => {
+            const data = { title: 'Cultural Currency', url: window.location.href };
+            if (navigator.share) { await navigator.share(data); } 
+            else { navigator.clipboard.writeText(data.url); alert('Link copied!'); }
+        });
+        </script>
+
+        <script>
+        // Replace these with your actual details
+        const SHEET_ID = '1PXV3fC2ZSlcOy-rKQoHku54ozi7vKKmwC4j9Z0V773U';
+        const SHEET_NAME = 'Sheet1'; 
+        const API_KEY = 'AIzaSyCxeUeuIqB43vzJRrW3gt8tH5xiil5MxSs'; // You'll get this from Google Cloud Console
+        
+        async function loadLinks() {
+        const container = document.querySelector('.btn-list');
+        
+        // Check if configuration is missing
+        if (SHEET_ID.includes('YOUR') || API_KEY.includes('YOUR')) {
+            container.innerHTML = '<p class="tagline" style="color:#ff4d4d;">Error: API Configuration Missing.</p>';
+            return;
+        }
+    
+        const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${SHEET_NAME}!A2:C?key=${API_KEY}`;
+        
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+    
+            if (data.error) {
+                console.error('Google API Error:', data.error.message);
+                container.innerHTML = `<p class="tagline">Setup Error: ${data.error.status}</p>`;
+                return;
+            }
+    
+            const rows = data.values;
+            container.innerHTML = ''; // Clear the loader
+    
+            if (rows && rows.length > 0) {
+                        rows.forEach(row => {
+                            const name = row[0];
+                            const link = row[1];
+                            const icon = (row[2] || 'fa-link').toLowerCase();
+                            
+                            // Smart Brand Detection: Automatically picks 'fab' for brand logos
+                            const brandIcons = ['spotify', 'instagram', 'soundcloud', 'facebook', 'twitter', 'apple', 'mixcloud', 'youtube'];
+                            const isBrand = brandIcons.some(brand => icon.includes(brand));
+                            const prefix = isBrand ? 'fab' : 'fas';
+            
+                            const buttonHtml = `
+                                <a href="${link}" class="btn" target="_blank" rel="noopener">
+                                    <i class="${prefix} ${icon}"></i> ${name}
+                                </a>
+                            `;
+                            container.insertAdjacentHTML('beforeend', buttonHtml);
+                        });
+                    } else {
+                        container.innerHTML = '<p class="tagline">No active links found.</p>';
+                    }
+                } catch (error) {
+                    console.error('Network Error:', error);
+                    container.innerHTML = '<p class="tagline">Failed to connect to Guestlist database.</p>';
+                }
+            }
+            
+            // Fire the function
+            loadLinks();
+            </script>
+</body>
+</html>
