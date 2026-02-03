@@ -61,14 +61,25 @@
         }
 
         body {
-            background-color: var(--bg-black);
-            color: var(--text-white);
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            /* Reference the image file */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/barber.jpg');
+            
+            /* Ensure the image covers the whole screen */
+            background-size: cover;
+            
+            /* Keep the image centered */
+            background-position: center;
+            
+            /* Fix the background so it doesn't scroll with the content */
+            background-attachment: fixed;
+            
+            /* Fallback color if the image fails to load */
+            background-color: #1a1a1a;
+            
+            /* Reset margins for a full-screen fit */
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
 
         .wrapper {
@@ -289,12 +300,13 @@
 </head>
 
 <body>
-    <div class="video-background">
+    <!-- <div class="video-background">
     <video autoplay muted loop playsinline poster="barber.jpg">
         <source src=" " type="video/mp4">
     </video>
     <div class="video-overlay"></div>
-    </div>
+    </div> 
+    -->
     
     <div class="wrapper">
         <img src="Images/GC_logo_gold_100.png" alt="Gusto Cuts Logo" class="logo">
