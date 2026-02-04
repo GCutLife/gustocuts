@@ -1,3 +1,8 @@
+window.addEventListener('load', () => {
+    const container = document.querySelector('.container');
+    container.classList.add('visible');
+});
+
 /**
  * Copies provided text to the clipboard and provides visual feedback
  * @param {string} text - The string to be copied
