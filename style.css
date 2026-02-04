@@ -86,3 +86,206 @@ p {
 .link-button i {
     font-size: 1.1rem;
 }
+
+ :root {
+            --bg-black: #050505;
+            --accent-gold: #d4af37; /* Optional accent color for 'premium' feel */
+            --text-white: #ffffff;
+            --button-bg: rgba(255, 255, 255, 0.08);
+            --button-hover: rgba(255, 255, 255, 0.15);
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 450px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 2px solid var(--text-white);
+            margin-bottom: 15px;
+        }
+
+        h1 { font-size: 1.5rem; letter-spacing: 2px; text-transform: uppercase; }
+        p { font-size: 0.9rem; opacity: 0.8; margin-bottom: 30px; }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Keeps it behind everything */
+            overflow: hidden;
+        }
+        
+        .video-background video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+        
+        /* The Overlay: Adjust opacity (0.6) to make text pop */
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); 
+        }
+
+        /* Link Buttons */
+        .btn-list { display: flex; flex-direction: column; gap: 16px; }
+        .btn {
+            background: var(--button-bg);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: var(--text-white);
+            padding: 18px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: var(--button-hover);
+            border-color: var(--text-white);
+            transform: translateY(-2px);
+        }
+
+        /* Signup Form */
+        .signup-section { margin-top: 50px; padding: 20px; border-top: 1px solid #222; }
+        .signup-form { display: flex; margin-top: 15px; }
+        .signup-form input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #333;
+            background: #111;
+            color: white;
+            border-radius: 4px 0 0 4px;
+        }
+        .signup-form button {
+            padding: 12px 20px;
+            border: none;
+            background: var(--text-white);
+            color: black;
+            font-weight: bold;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        /* Social Icons */
+        .socials { margin-top: 40px; font-size: 1.5rem; }
+        .socials a { color: var(--text-white); margin: 0 15px; transition: opacity 0.3s; }
+        .socials a:hover { opacity: 0.6; }
+
+        /* The Spinning Animation */
+        @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+        }
+
+        /* Updated Logo Styling */
+        .logo {
+            width: 120px; /* Slightly larger for detail */
+            height: 120px;
+            border-radius: 50%;
+            
+            /* Creating the 'Vinyl' look */
+            border: 4px solid #1a1a1a;
+            box-shadow: 0 0 0 2px #333, inset 0 0 10px rgba(0,0,0,0.5);
+            
+            margin-bottom: 20px;
+            object-fit: cover;
+            
+            /* Apply the animation: 8 seconds per rotation, linear, infinite */
+            animation: spin 8s linear infinite;
+        }
+        
+        /* DJ Interaction: Pause the record on hover */
+        .logo:hover {
+            animation-play-state: paused;
+            cursor: crosshair;
+            filter: brightness(1.2);
+        }
+        
+        /* Initial "Needle Drop" Fade In */
+        .wrapper {
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        body::before {
+        content: "";
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: url('https://www.transparenttextures.com/patterns/stardust.png');
+        opacity: 0.05;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+        .share-container {
+            margin-top: 20px;
+    }
+        .share-btn {
+            background: none;
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 8px 16px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .share-btn:hover {
+            border-color: white;
+        }
+        #copy-status {
+            display: none;
+            font-size: 0.7rem;
+            color: #00ff00; /* Subtle green for success */
+            margin-left: 10px;
+        }
+
+        /* Spinner Container */
+        .loader-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 0;
+        }
+        
+        /* The Spinner itself */
+        .spinner {
+            width: 30px;
+            height: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-top: 2px solid var(--text-white);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 10px;
+        }
+        
+        .loader-text {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.5;
+        }
