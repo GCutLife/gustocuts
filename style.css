@@ -40,15 +40,17 @@ p {
 }
 
 /* Glassmorphism Buttons */
-.link-button {
+.link-button, button.link-button {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
+    width: 100%; /* Ensure button takes full width of container */
     margin-bottom: 15px;
     padding: 16px;
     color: white;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif; /* Inherit font */
     font-weight: 700;
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -58,9 +60,11 @@ p {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 50px; /* Rounded pill shape */
+    border-radius: 50px;
     
+    cursor: pointer; /* Makes it feel like a link */
     transition: all 0.3s ease;
+    outline: none;
 }
 
 .link-button:hover {
