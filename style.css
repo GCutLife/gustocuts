@@ -14,11 +14,21 @@ body {
     min-height: 100vh;
 }
 
+/* Initial state: hidden */
 .container {
     width: 90%;
     max-width: 400px;
     text-align: center;
+    opacity: 0;
+    transform: translateY(20px); /*Subtle slide-up effect */
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
+
+/* State when loaded */
+.container.visible {
+    opacity: 1;
+    transform: translateY(0);
+} 
 
 .logo {
     width: 100px;
